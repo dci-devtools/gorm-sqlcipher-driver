@@ -6,12 +6,12 @@
 
 ```go
 import (
-  "gorm.io/driver/sqlite"
+  sqlcipher "github.com/open-olive/gorm-sqlcipher"
   "gorm.io/gorm"
 )
 
-// github.com/mattn/go-sqlite3
-db, err := gorm.Open(sqlite.Open("gorm.db"), &gorm.Config{})
+// https://github.com/mutecomm/go-sqlcipher
+db, err := gorm.Open(sqlcipher.Open("gorm.db"), &gorm.Config{})
 ```
 
 Checkout [https://gorm.io](https://gorm.io) for details.
